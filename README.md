@@ -45,6 +45,9 @@ Follow the rest of the labs sequentially.
 
   `docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
 
+- Running the Labs by running Jupyter Lab from this folder
+  `jupyter lab`
+
 ## Building Docker Image with Jupyter Lab & Couchbase SDK
 
 `docker build -t couchbase-jupyter-lab .`
