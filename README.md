@@ -31,15 +31,27 @@ Follow the instructions in [Lab 1](notebooks/Lab_01_Introduction_to_Couchbase.ip
 
 Follow the rest of the labs sequentially.
 
+#### Configuring the Couchbase Cluster Information for Examples
+
+- The configuration is stored in an environment file, .env in this folder.
+
+- Note that you might have to check for hidden files to see this file on Unix environments.
+
+- This file can be used to update the connection settings.
+
+  - DB_HOST: Set to `couchbase://couchbase` by default for connecting to the Couchbase cluster in the docker environment via Docker Compose. If you are running Couchbase locally on your machine via docker or installation, you can change the connection string to `couchbase://localhost`.
+  - DB_USER: Set to `Administrator` by default. If it is different for your cluster, please update the file.
+  - DB_PASSWORD: Set to `Password` by default. If it is different for your cluster, please update the file.
+
 ## Running the Labs Locally
 
 ### Prerequisites
 
 - Python 3.8 or higher
 
-- Install the Couchbase SDK & Jupyter Lab
+- Install the Couchbase SDK (v4 or above) & Jupyter Lab
 
-  `pip install couchbase jupyterlab`
+  `pip install couchbase jupyterlab python-dotenv`
 
 - Running Couchbase using Docker
 
