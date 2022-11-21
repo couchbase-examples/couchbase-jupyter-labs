@@ -71,4 +71,4 @@ Click on the link to access Jupyter lab from the container logs as shown in the 
 
 #### Note
 
-The Labs are not configured to be run using [Couchbase Capella](https://cloud.couchbase.com/). If you want to run it using Capella, the interface would be slightly different from the screenshots. Also, the connection strings & options would be slightly different. For more details, you can check the [SDK Documentation](https://docs.couchbase.com/python-sdk/current/hello-world/start-using-sdk.html#full-example) on connecting to Capella.
+The Labs are not configured to be run using [Couchbase Capella](https://cloud.couchbase.com/). If you want to run it using Capella, the interface would be slightly different from the screenshots. Also, the connection strings & options would be slightly different. The connection string would be `couchbases://<connection_string_from_capella_ui>`. You would also need to whitelist the IP from which you are running the Notebooks on the Capella UI. For more details, you can check the [SDK Documentation](https://docs.couchbase.com/python-sdk/current/hello-world/start-using-sdk.html#full-example) on connecting to Capella.
