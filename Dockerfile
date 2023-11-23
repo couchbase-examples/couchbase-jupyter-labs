@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook:5ae537728c69
+FROM jupyter/base-notebook:notebook-7.0.6
 LABEL author="Nithish Raghunandanan"
 USER root
 # Install the Couchbase SDK
