@@ -16,7 +16,7 @@ A series of labs created to start using Couchbase with the Python SDK. It includ
 
 To bring up the Couchbase and the Jupyter Lab environment with the Couchbase Python SDK, run
 
-`docker-compose up`
+`docker compose up`
 
 Access the Jupyter Lab environment by clicking on the access URL in the logs as shown in the screenshot below.
 
@@ -33,7 +33,7 @@ Follow the rest of the labs sequentially.
 
 #### Configuring the Couchbase Cluster Information for Examples
 
-- The configuration is stored in an environment file, .env in this folder.
+- The configuration is stored in an environment file, `.env` in this folder. Start by copying `.env.sample` to `.env` and updating the values for your Couchbase deployment.
 
 - Note that you might have to check for hidden files to see this file on Unix environments.
 
