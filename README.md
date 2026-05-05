@@ -16,7 +16,7 @@ A series of labs created to start using Couchbase with the Python SDK. It includ
 
 To bring up the Couchbase and the Jupyter Lab environment with the Couchbase Python SDK, run
 
-`docker-compose up`
+`docker compose up`
 
 Access the Jupyter Lab environment by clicking on the access URL in the logs as shown in the screenshot below.
 
@@ -33,11 +33,13 @@ Follow the rest of the labs sequentially.
 
 #### Configuring the Couchbase Cluster Information for Examples
 
-- The configuration is stored in an environment file, .env in this folder.
+- The Docker Compose flow reads configuration from a root-level `.env` file. Start by copying `.env.sample` to `.env` and updating the values for your Couchbase deployment.
 
-- Note that you might have to check for hidden files to see this file on Unix environments.
+- If you are running the notebooks directly in Jupyter Lab from the `notebooks/` directory, also copy `.env.sample` to `notebooks/.env` so `load_dotenv()` picks up the same settings inside the notebook kernels.
 
-- This file can be used to update the connection settings.
+- Note that you might have to check for hidden files to see these files on Unix environments.
+
+- These files can be used to update the connection settings.
 
   - DB_HOST: Set to `couchbase://couchbase` by default for connecting to the Couchbase cluster in the docker environment via Docker Compose. If you are running Couchbase locally on your machine via docker or installation, you can change the connection string to `couchbase://localhost`.
   - DB_USER: Set to `Administrator` by default. If it is different for your cluster, please update the file.
