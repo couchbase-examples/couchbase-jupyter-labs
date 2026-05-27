@@ -53,7 +53,7 @@ Follow the rest of the labs sequentially.
 
 - Install the Couchbase SDK (v4 or above), `python-dotenv`, and Jupyter Lab
 
-  `python3 -m pip install couchbase python-dotenv jupyterlab`
+  `python -m pip install couchbase python-dotenv jupyterlab`
 
 - Running Couchbase using Docker
 
