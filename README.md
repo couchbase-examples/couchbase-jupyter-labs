@@ -35,7 +35,7 @@ Follow the rest of the labs sequentially.
 
 - The Docker Compose flow reads configuration from a root-level `.env` file. Start by copying `.env.sample` to `.env` and updating the values for your Couchbase deployment.
 
-- If you are running the notebooks directly in Jupyter Lab from the `notebooks/` directory, also copy `.env.sample` to `notebooks/.env` so `load_dotenv()` picks up the same settings inside the notebook kernels.
+- If you are running the notebooks directly in Jupyter Lab, the notebook cells now look for either `notebooks/.env` or the repo-root `.env`, so you can keep a single repo-root `.env` or add `notebooks/.env` if you prefer notebook-local config.
 
 - Note that you might have to check for hidden files to see these files on Unix environments.
 
@@ -51,9 +51,9 @@ Follow the rest of the labs sequentially.
 
 - Python 3.8 or higher
 
-- Install the Couchbase SDK (v4 or above) & Jupyter Lab
+- Install the Couchbase SDK (v4 or above), `python-dotenv`, and Jupyter Lab
 
-  `pip install couchbase jupyterlab python-dotenv`
+  `python -m pip install couchbase python-dotenv jupyterlab`
 
 - Running Couchbase using Docker
 
