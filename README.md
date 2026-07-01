@@ -49,7 +49,7 @@ Follow the rest of the labs sequentially.
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 
 - Install the Couchbase SDK (v4 or above), `python-dotenv`, and Jupyter Lab
 
@@ -58,6 +58,8 @@ Follow the rest of the labs sequentially.
 - Running Couchbase using Docker
 
   `docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase`
+
+- Load the `travel-sample` bucket before starting the notebooks. Several labs use the Query and Index services, and Lab 5 requires the Search service to be enabled.
 
 - Running the Labs by running Jupyter Lab from this folder
   `jupyter lab`
