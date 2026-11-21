@@ -35,7 +35,7 @@ Follow the rest of the labs sequentially.
 
 - The Docker Compose flow reads configuration from a root-level `.env` file. Start by copying `.env.sample` to `.env` and updating the values for your Couchbase deployment.
 
-- If you are running the notebooks directly in Jupyter Lab, the notebook cells now look for either `notebooks/.env` or the repo-root `.env`, so you can keep a single repo-root `.env` or add `notebooks/.env` if you prefer notebook-local config.
+- The notebooks load their settings through [`notebooks/lab_env.py`](notebooks/lab_env.py). Variables already set in your environment win, then the repo-root `.env`, then the committed defaults in `notebooks/.env`. So you only need to edit the repo-root `.env`, however Jupyter Lab was started.
 
 - Note that you might have to check for hidden files to see these files on Unix environments.
 
