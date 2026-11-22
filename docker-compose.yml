@@ -1,7 +1,9 @@
 version: "3.9"
 services:
   jupyter:
-    image: nithishr/couchbase-jupyter-lab:4.1.9
+    # Build from the local Dockerfile so the notebook server gets current, patched dependencies.
+    build: .
+    image: couchbase-jupyter-lab:local
     ports:
       - "8888:8888"
     environment:

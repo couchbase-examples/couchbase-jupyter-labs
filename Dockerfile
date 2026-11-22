@@ -1,4 +1,6 @@
-FROM jupyter/base-notebook:notebook-7.0.6
+# Pinned to a dated Jupyter Docker Stacks build (Notebook 7.6.5 / JupyterLab 4.6.6 / Python 3.13).
+# The old Docker Hub jupyter/* images stopped receiving updates in 2023; current builds live on quay.io.
+FROM quay.io/jupyter/base-notebook:2026-11-16
 LABEL author="Nithish Raghunandanan"
 USER root
 # Install the Couchbase SDK
